@@ -89,7 +89,7 @@ namespace Core.Controllers
 
             return View();
         }
-        
+       
         public IActionResult Error()
         {
             return View();

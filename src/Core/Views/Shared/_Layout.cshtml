@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Core</title>
-
+    <title>Zeppelin's World</title>
+     
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
@@ -16,18 +16,26 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
     @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
+
+
+
+
+
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top"> 
         <div class="container">
             <div class="navbar-header">
+                <h1 class="navbar-text">Welcome to Zeppelin's World of Wonderful</h1>
+                <img src="~/images/Zeppelin Profile Picture.jpg" height="50" width="50" />
+                <img src="~/images/David Profile Picture.jpg" height="50" width="50" />
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Core</a>
+               <!-- <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Core</a> --> 
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

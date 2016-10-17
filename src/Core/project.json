@@ -44,7 +44,7 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "BundlerMinifier.Core": "2.0.238",
+    "BundlerMinifier.Core": "2.2.281",
     "Microsoft.ApplicationInsights.AspNetCore": "1.0.2"
   },
 

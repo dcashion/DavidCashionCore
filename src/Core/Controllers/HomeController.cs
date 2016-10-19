@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Core.Models;
 
 namespace Core.Controllers
 {
@@ -13,11 +14,27 @@ namespace Core.Controllers
             return View();
         }
 
+        // Post
+        [HttpPost]
+        public IActionResult About(Person PersonIn)
+        {
+            return View(PersonIn);
+        }
+
+
+        // GET /HOME/ABOUT
+        [HttpGet]
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Here is a person";
 
-            return View();
+            var p = new Person {
+                FirstName = "Scott",
+                LastName = "Hanselman",
+                Birthdate = new DateTime(1960, 1, 22)
+            };
+
+            return View(p);  //assumes home/about
         }
 
         public IActionResult Contact()

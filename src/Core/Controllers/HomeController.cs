@@ -79,13 +79,6 @@ namespace Core.Controllers
             return View();
         }
 
-        public IActionResult LearningBlog()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
         public IActionResult Messaging()
         {
             ViewData["Message"] = "Your contact page.";
